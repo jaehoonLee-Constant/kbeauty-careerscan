@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jaehoonlee-constant.github.io/kbeauty-careerscan/sitemap.xml

@@ -94,15 +94,22 @@
 .crumb{font-size:12px;color:var(--muted);margin-bottom:8px}
 .crumb a{color:var(--muted)}
 .foot{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.7}
-</style></head><body><div class="wrap"><div class="nav"><a class="brand" href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/">💄 K뷰티 커리어스캔</a><span class="sp"></span><a href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/#explore">전체 62개사</a><a href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/methodology.html">방법론</a></div><h1>방법론 & 데이터 출처</h1>
+</style></head><body><div class="wrap"><div class="nav"><a class="brand" href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/">💄 K뷰티 커리어스캔</a><span class="sp"></span><a href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/rank-pay.html">연봉랭킹</a><a href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/rank-hiring.html">채용신호</a><a href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/#explore">전체기업</a><a href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/methodology.html">방법론</a></div><h1>방법론 & 데이터 출처</h1>
 <p class="desc">모든 숫자는 공시 실데이터 — 산식은 전부 공개</p>
 <section class="cat"><h2>1. 데이터 출처 (Sources)</h2>
 <p class="cap1">비공개 정보 없음 — 누구나 열람 가능한 공시만 사용</p>
 <ul class="items">
 <li><span class="key">재무제표</span> 금융감독원 전자공시시스템(DART) 감사보고서 2022–2025 (<a href="https://dart.fss.or.kr">dart.fss.or.kr</a>)</li>
-<li><span class="key">급여·인원</span> 국민연금공단 사업장 가입 내역 공시 (1인 월평균 신고액)</li>
+<li><span class="key">급여·인원·입퇴사</span> 국민연금공단 사업장 가입 내역 공시 — 월별 가입자수·신규취득·자격상실</li>
 </ul></section>
-<section class="cat"><h2>2. 취업 체력점수 산식 (Score Formula)</h2>
+<section class="cat"><h2>2. 연봉·퇴사율 산식 (People Metrics)</h2>
+<p class="cap1">국민연금 공시값을 그대로 계산 — 추정 한계 명시</p>
+<ul class="items">
+<li><span class="key">평균연봉</span> 당월 고지금액 ÷ 9%(요율) ÷ 가입자수 × 12 — 신고보수 상한 탓에 고연봉 기업일수록 과소 추정</li>
+<li><span class="key">연 퇴사율</span> 최근 12개월 자격상실자 합 ÷ 평균 가입자수 — 계약종료·아웃소싱 전환도 포함될 수 있음</li>
+<li><span class="key">사업장 범위</span> 법인 대표 사업장(최대 가입자) 기준 — 공장·지점이 별도 사업자번호면 미포함</li>
+</ul></section>
+<section class="cat"><h2>3. 취업 체력점수 산식 (Score Formula)</h2>
 <p class="cap1">62개사 상대평가(백분위) 가중합 — 100점 만점</p>
 <ul class="items">
 <li><span class="key">성장 30%</span> 매출 연평균 성장률(CAGR 2022→최근) 백분위</li>
@@ -110,13 +117,13 @@
 <li><span class="key">안정 25%</span> 흑자 45 + 자본건전(자본총계>0) 35 + 부채비율(100%↓ 20 / 200%↓ 10)</li>
 <li><span class="key">규모 20%</span> 매출액 백분위</li>
 </ul></section>
-<section class="cat"><h2>3. 한계 (Limitations)</h2>
+<section class="cat"><h2>4. 한계 (Limitations)</h2>
 <p class="cap1">점수는 참고지표 — 아래를 반드시 감안</p>
 <ul class="items">
 <li>감사보고서 미공시 기업(외감 대상 아님)은 누락 — 62개사가 전체 시장은 아님</li>
 <li>재무는 과거 데이터 — 최근 투자유치·구조조정은 반영 지연</li>
 <li>연봉·복지·조직문화는 재무로 알 수 없음 — 면접·평판 조회 병행 권장</li>
 </ul></section>
-<section class="cat"><h2>4. 정정·문의 (Contact)</h2>
+<section class="cat"><h2>5. 정정·문의 (Contact)</h2>
 <p class="cap1">기업 담당자 정정 요청 환영</p>
 <ul class="items"><li>GitHub 저장소 이슈로 접수 — 확인 후 반영</li></ul></section><div class="foot">데이터: 금융감독원 전자공시(DART) 감사보고서 2022–2025 · 국민연금공단 사업장 신고 공시. 본 사이트의 점수·태그는 공개 산식에 따른 상대평가 참고지표로, 투자·입사 결정의 근거가 아니며 각 기업의 실제 상태와 다를 수 있음. 정정 요청: GitHub 저장소 이슈로 접수. © 2026 K뷰티 커리어스캔</div></div></body></html>

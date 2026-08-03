@@ -2,96 +2,97 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>페이지 없음 | K뷰티 커리어스캔</title>
 <meta name="description" content="요청한 페이지가 없음">
-<link rel="canonical" href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/404.html">
+<link rel="canonical" href="https://careerscan.slopeyard.com/404.html">
 <meta property="og:type" content="website"><meta property="og:title" content="페이지 없음 | K뷰티 커리어스캔">
-<meta property="og:description" content="요청한 페이지가 없음"><meta property="og:url" content="https://jaehoonlee-constant.github.io/kbeauty-careerscan/404.html">
+<meta property="og:description" content="요청한 페이지가 없음"><meta property="og:url" content="https://careerscan.slopeyard.com/404.html">
 <meta property="og:site_name" content="K뷰티 커리어스캔"><meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
-  :root {
-    color-scheme: light;
-    --surface: #fcfcfb; --plane: #f9f9f7; --ink: #0b0b0b; --ink-2: #52514e;
-    --muted: #898781; --line: #e1e0d9; --line-strong: #c3c2b7;
-    --accent: #2a78d6; --accent-soft: #eaf1fb;
-    --good: #0ca30c; --good-soft: #e9f7ea;
-    --warning: #c98500; --warning-soft: #fff4e2;
-    --critical: #d03b3b; --critical-soft: #fbe7e6;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:where(:not([data-theme="light"])) {
-      color-scheme: dark;
-      --surface: #181b22; --plane: #111318; --ink: #e8e8ea; --ink-2: #c3c2b7;
-      --muted: #9aa0aa; --line: #2a2e37; --line-strong: #383835;
-      --accent: #5b9dff; --accent-soft: #17263c;
-      --good: #0ca30c; --good-soft: #0e2a1a;
-      --warning: #f0b95f; --warning-soft: #332608;
-      --critical: #e66767; --critical-soft: #3a1512;
-    }
-  }
-  :root[data-theme="dark"] {
-    color-scheme: dark;
-    --surface: #181b22; --plane: #111318; --ink: #e8e8ea; --ink-2: #c3c2b7;
-    --muted: #9aa0aa; --line: #2a2e37; --line-strong: #383835;
-    --accent: #5b9dff; --accent-soft: #17263c;
-    --good: #0ca30c; --good-soft: #0e2a1a;
-    --warning: #f0b95f; --warning-soft: #332608;
-    --critical: #e66767; --critical-soft: #3a1512;
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--plane); color: var(--ink); font-family: -apple-system, "Segoe UI", "Pretendard", "Malgun Gothic", sans-serif; font-size: 15px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
-  .wrap { max-width: 860px; margin: 0 auto; padding: 44px 22px 90px; }
-  header { padding-bottom: 22px; margin-bottom: 4px; border-bottom: 2px solid var(--ink); }
-  .eyebrow { font-family: ui-monospace, Consolas, monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
-  h1 { font-size: clamp(22px, 3.4vw, 28px); line-height: 1.2; margin: 0 0 8px; font-weight: 700; letter-spacing: -.01em; }
-  header p.desc { color: var(--ink-2); margin: 0; max-width: 62ch; font-size: 14px; }
-  .meta { font-family: ui-monospace, Consolas, monospace; font-size: 11px; color: var(--muted); margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 16px; }
-  .concl1 { font-size: 15.5px; margin: 20px 0 28px; padding: 14px 18px; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 6px 6px 0; }
-  .concl1 b { color: var(--accent); }
-  section.cat { margin: 32px 0; padding-top: 20px; border-top: 1px solid var(--line); }
-  section.cat:first-of-type { border-top: none; }
-  section.cat h2 { font-size: 16px; margin: 0 0 4px; font-weight: 700; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
-  section.cat h2 .en { font-family: ui-monospace, Consolas, monospace; font-size: 11px; font-weight: 400; color: var(--muted); }
-  .cap1 { font-size: 13px; color: var(--muted); margin: 0 0 12px; }
-  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 0 0 12px; }
-  .kpi { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
-  .kpi .lbl { font-family: ui-monospace, Consolas, monospace; font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
-  .kpi .val { font-family: ui-monospace, Consolas, monospace; font-size: 24px; font-weight: 700; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
-  .kpi .delta { font-size: 12px; font-weight: 700; margin-left: 5px; }
-  .kpi .delta.up { color: var(--good); } .kpi .delta.down { color: var(--critical); }
-  .kpi .sub { font-size: 11.5px; color: var(--muted); display: block; margin-top: 4px; }
-  .kpi.crit { border-color: var(--critical); background: var(--critical-soft); } .kpi.crit .val { color: var(--critical); }
-  .kpi.good { border-color: var(--good); background: var(--good-soft); } .kpi.good .val { color: var(--good); }
-  .barlist { margin: 6px 0 10px; }
-  .barlist .row { display: flex; align-items: center; gap: 10px; margin-bottom: 5px; }
-  .barlist .label { width: 118px; flex: none; text-align: right; font-size: 12px; color: var(--ink-2); }
-  .barlist .track { flex: 1; background: var(--line); border-radius: 3px; height: 17px; overflow: hidden; }
-  .barlist .fill { height: 100%; border-radius: 3px; background: var(--accent); }
-  .barlist .fill.crit { background: var(--critical); } .barlist .fill.good { background: var(--good); }
-  .barlist .value { width: 62px; flex: none; font-family: ui-monospace, Consolas, monospace; font-variant-numeric: tabular-nums; font-size: 12px; text-align: right; }
-  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  .split .col h3 { font-size: 12px; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
-  ul.items { list-style: none; margin: 6px 0 0; padding: 0; }
-  ul.items li { padding: 7px 0; border-bottom: 1px dashed var(--line); font-size: 13px; color: var(--ink-2); }
-  ul.items li:last-child { border-bottom: none; }
-  ul.items b.key { color: var(--ink); font-weight: 660; }
-  .badge { display: inline-block; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 20px; margin-right: 6px; vertical-align: middle; }
-  .badge.critical { background: var(--critical); color: #fff; }
-  .badge.good { background: var(--good-soft); color: var(--good); }
-  .badge.warning { background: var(--warning-soft); color: var(--warning); border: 1px solid var(--warning); }
-  .src { font-family: ui-monospace, Consolas, monospace; font-size: 11px; color: var(--muted); margin-top: 4px; display: block; }
-  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11.5px; font-family: ui-monospace, Consolas, monospace; line-height: 1.9; }
-  a { color: var(--accent); }
-  @media (max-width: 640px) { .split { grid-template-columns: 1fr; } body { font-size: 14.5px; } .wrap { padding: 28px 16px 70px; } }
-</style><style>
-.jcard{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:8px;list-style:none}
-.jcard a{color:inherit;text-decoration:none;display:block}
-.jcard .meta{font-size:12px;color:var(--muted);margin:4px 0 8px}
-.fbtn{font-size:12px;font-weight:600;padding:6px 12px;border:1px solid var(--line);border-radius:20px;background:var(--surface);color:var(--ink);cursor:pointer;margin-right:6px}
-.fbtn.on{background:var(--ink);color:var(--bg)}
-.nav{display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);margin-bottom:26px;font-size:14px}
-.nav a{color:var(--ink);text-decoration:none;font-weight:600}
-.nav .brand{font-weight:800;font-size:16px}
+:root{--ink:#191F28;--sub:#4E5968;--muted:#8B95A1;--line:#E5E8EB;--bg:#FFFFFF;--bg2:#F8F9FA;
+--navy:#1D2032;--mint:#00C88C;--mintbg:#EAFBF4;--red:#EB5757;--redbg:#FDEEEE;--amber:#F2994A;--amberbg:#FEF3E8;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink);
+font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
+a{color:inherit;text-decoration:none}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1080px;margin:0 auto;padding:0 20px;height:60px;display:flex;align-items:center;gap:24px}
+.nav .brand{font-weight:800;font-size:17px;display:flex;align-items:center;gap:8px}
+.nav .brand .dot{width:26px;height:26px;border-radius:8px;background:var(--navy);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:13px}
+.nav .menu{display:flex;gap:18px;font-size:14px;font-weight:600;color:var(--sub)}
+.nav .menu a:hover{color:var(--ink)}
 .nav .sp{flex:1}
-.crumb{font-size:12px;color:var(--muted);margin-bottom:8px}
-.crumb a{color:var(--muted)}
-.foot{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.7}
-</style></head><body><div class="wrap"><div class="nav"><a class="brand" href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/">💄 K뷰티 커리어스캔</a><span class="sp"></span><a href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/rank-pay.html">연봉랭킹</a><a href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/rank-hiring.html">채용신호</a><a href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/#explore">전체기업</a><a href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/methodology.html">방법론</a></div><h1>페이지가 없음</h1><p class="desc"><a href="https://jaehoonlee-constant.github.io/kbeauty-careerscan/">홈으로 돌아가기</a></p><div class="foot">데이터: 금융감독원 전자공시(DART) 감사보고서 2022–2025 · 국민연금공단 사업장 신고 공시. 본 사이트의 점수·태그는 공개 산식에 따른 상대평가 참고지표로, 투자·입사 결정의 근거가 아니며 각 기업의 실제 상태와 다를 수 있음. 정정 요청: GitHub 저장소 이슈로 접수. © 2026 K뷰티 커리어스캔</div></div></body></html>
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.hero{background:var(--navy);color:#fff;padding:56px 0 64px}
+.hero h1{font-size:34px;font-weight:800;line-height:1.3;letter-spacing:-.5px}
+.hero p{margin-top:12px;color:#B6BAC7;font-size:16px}
+.hero .search{margin-top:28px;max-width:560px;position:relative}
+.hero .search input{width:100%;height:56px;border-radius:14px;border:none;padding:0 20px 0 48px;font-size:16px;font-family:inherit;outline:none;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.hero .search .ic{position:absolute;left:18px;top:17px;color:#8B95A1}
+.chips{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.chip{font-size:13px;font-weight:600;padding:7px 14px;border-radius:20px;background:rgba(255,255,255,.12);color:#DDE0E7;cursor:pointer;border:none;font-family:inherit}
+.chip.on,.chip:hover{background:var(--mint);color:#00382a}
+.statrow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-30px;position:relative;z-index:2}
+.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:0 2px 8px rgba(25,31,40,.04)}
+.stat .v{font-size:24px;font-weight:800;letter-spacing:-.5px}
+.stat .v small{font-size:13px;font-weight:600;color:var(--muted);margin-left:2px}
+.stat .k{font-size:13px;color:var(--muted);margin-top:2px}
+.sec{margin-top:52px}
+.sec-h{display:flex;align-items:baseline;gap:12px;margin-bottom:6px}
+.sec-h h2{font-size:22px;font-weight:800;letter-spacing:-.3px}
+.sec-h a{font-size:13px;font-weight:600;color:var(--mint)}
+.sec-cap{font-size:14px;color:var(--muted);margin-bottom:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 2px 8px rgba(25,31,40,.04)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.rowbar{display:flex;align-items:center;gap:12px;padding:9px 0;font-size:14px}
+.rowbar .lb{flex:0 0 148px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rowbar .tr{flex:1;height:8px;background:var(--bg2);border-radius:4px;overflow:hidden}
+.rowbar .fl{height:100%;border-radius:4px;background:var(--mint)}
+.rowbar .fl.down{background:var(--red)} .rowbar .fl.warn{background:var(--amber)} .rowbar .fl.navy{background:var(--navy)}
+.rowbar .vl{flex:0 0 auto;font-weight:700;font-size:13px;color:var(--sub);white-space:nowrap}
+.rowbar:hover .lb{color:var(--mint)}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;border-radius:8px;margin-right:5px;background:var(--bg2);color:var(--sub)}
+.tag.up{background:var(--mintbg);color:#00996B} .tag.down{background:var(--redbg);color:var(--red)} .tag.warn{background:var(--amberbg);color:#D97F1D}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;transition:box-shadow .15s,transform .15s;display:block}
+.ccard:hover{box-shadow:0 8px 24px rgba(25,31,40,.10);transform:translateY(-2px)}
+.ccard .top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.avatar{width:44px;height:44px;border-radius:12px;color:#fff;font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;flex:0 0 44px}
+.ccard .nm{font-size:16px;font-weight:800;letter-spacing:-.2px}
+.ccard .rk{font-size:12px;color:var(--muted);font-weight:600}
+.mrow{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-top:1px solid var(--bg2)}
+.mrow .k{color:var(--muted)} .mrow .v{font-weight:700}
+.mrow .v.up{color:#00996B} .mrow .v.down{color:var(--red)}
+.foot{margin-top:72px;background:var(--bg2);border-top:1px solid var(--line);padding:32px 0 48px;font-size:12.5px;color:var(--muted);line-height:1.8}
+.crumb{font-size:13px;color:var(--muted);margin:24px 0 12px}
+.crumb a{color:var(--muted)} .crumb a:hover{color:var(--ink)}
+.chead{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.chead .avatar{width:64px;height:64px;border-radius:18px;font-size:24px}
+.chead h1{font-size:28px;font-weight:800;letter-spacing:-.5px}
+.score-badge{margin-left:auto;text-align:center;background:var(--navy);color:#fff;border-radius:16px;padding:12px 22px}
+.score-badge .s{font-size:26px;font-weight:800;line-height:1.1}
+.score-badge .t{font-size:12px;color:#B6BAC7}
+.stitle{font-size:17px;font-weight:800;margin-bottom:14px;letter-spacing:-.2px}
+.cklist{list-style:none}
+.cklist li{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--bg2);font-size:14px;color:var(--sub)}
+.cklist li:last-child{border-bottom:none}
+.ck{flex:0 0 8px;height:8px;border-radius:50%;margin-top:7px;background:var(--line)}
+.ck.up{background:var(--mint)} .ck.down{background:var(--red)} .ck.warn{background:var(--amber)}
+.simrow{display:flex;gap:10px;flex-wrap:wrap}
+.sim{border:1px solid var(--line);border-radius:12px;padding:10px 16px;font-size:14px;font-weight:700;display:flex;gap:8px;align-items:center}
+.sim:hover{border-color:var(--mint);color:#00996B}
+.sim small{color:var(--muted);font-weight:600}
+.src{font-size:12.5px;color:var(--muted);margin-top:12px}
+.axes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.axis{text-align:center;background:var(--bg2);border-radius:12px;padding:14px 8px}
+.axis .n{font-size:22px;font-weight:800}
+.axis .l{font-size:12.5px;color:var(--muted)}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl th{font-size:12.5px;color:var(--muted);font-weight:600;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+.tbl td{padding:10px;border-bottom:1px solid var(--bg2);font-weight:600}
+@media(max-width:860px){.grid3,.grid4,.statrow,.axes{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}
+.hero h1{font-size:26px}.rowbar .lb{flex-basis:110px;font-size:13px}}
+@media(max-width:520px){.grid3,.grid4{grid-template-columns:1fr}.statrow{grid-template-columns:repeat(2,1fr)}}
+</style></head><body><nav class="nav"><div class="nav-in"><a class="brand" href="https://careerscan.slopeyard.com/"><span class="dot">K</span>K뷰티 커리어스캔</a><span class="sp"></span><div class="menu"><a href="https://careerscan.slopeyard.com/rank-pay.html">연봉랭킹</a><a href="https://careerscan.slopeyard.com/rank-hiring.html">채용신호</a><a href="https://careerscan.slopeyard.com/#explore">전체기업</a><a href="https://careerscan.slopeyard.com/methodology.html">방법론</a></div></div></nav><div class="wrap sec"><div class="card" style="text-align:center;padding:60px"><h2>페이지가 없음</h2><p class="sec-cap" style="margin-top:8px"><a href="https://careerscan.slopeyard.com/" style="color:var(--mint);font-weight:700">홈으로 돌아가기 →</a></p></div></div><footer class="foot"><div class="wrap">데이터: 금융감독원 전자공시(DART) 감사보고서 2022–2025 · 국민연금공단 사업장 신고 공시 · 매월 자동 갱신<br>본 사이트의 점수·태그는 공개 산식에 따른 상대평가 참고지표로, 투자·입사 결정의 근거가 아니며 각 기업의 실제 상태와 다를 수 있음. 정정 요청: <a href="https://github.com/jaehoonLee-Constant/kbeauty-careerscan/issues" style="text-decoration:underline">GitHub Issues</a> · © 2026 K뷰티 커리어스캔</div></footer></body></html>

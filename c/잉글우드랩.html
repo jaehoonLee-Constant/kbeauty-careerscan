@@ -14,16 +14,20 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink);
-font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
+font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav-in{max-width:1080px;margin:0 auto;padding:0 20px;height:60px;display:flex;align-items:center;gap:24px}
+.nav-in{max-width:1080px;margin:0 auto;padding:0 20px;height:60px;display:flex;align-items:center;gap:24px;min-width:0}
 .nav .brand{font-weight:800;font-size:17px;display:flex;align-items:center;gap:8px}
 .nav .brand .dot{width:26px;height:26px;border-radius:8px;background:var(--navy);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:13px}
-.nav .menu{display:flex;gap:18px;font-size:14px;font-weight:600;color:var(--sub)}
+.nav .menu{display:flex;gap:18px;font-size:14px;font-weight:600;color:var(--sub);overflow-x:auto;white-space:nowrap;scrollbar-width:none;min-width:0}
+.nav .menu::-webkit-scrollbar{display:none}
 .nav .menu a:hover{color:var(--ink)}
 .nav .sp{flex:1}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px;min-width:0}
+.grid2>*,.grid3>*,.grid4>*,.statrow>*,.chead>*,.rowbar>*{min-width:0}
+.card{max-width:100%;overflow-wrap:break-word}
+svg{max-width:100%;height:auto}
 .hero{background:var(--navy);color:#fff;padding:56px 0 64px}
 .hero h1{font-size:34px;font-weight:800;line-height:1.3;letter-spacing:-.5px}
 .hero p{margin-top:12px;color:#B6BAC7;font-size:16px}
@@ -49,8 +53,8 @@ a{color:inherit;text-decoration:none}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .rowbar{display:flex;align-items:center;gap:12px;padding:9px 0;font-size:14px}
 .rowbar .lb{flex:0 0 148px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.rowbar .tr{flex:1;height:8px;background:var(--bg2);border-radius:4px;overflow:hidden}
-.rowbar .fl{height:100%;border-radius:4px;background:var(--mint)}
+.rowbar .tr{flex:1;height:8px;background:var(--bg2);border-radius:4px;overflow:hidden;display:block;min-width:24px}
+.rowbar .fl{height:100%;border-radius:4px;background:var(--mint);display:block}
 .rowbar .fl.down{background:var(--red)} .rowbar .fl.warn{background:var(--amber)} .rowbar .fl.navy{background:var(--navy)}
 .rowbar .vl{flex:0 0 auto;font-weight:700;font-size:13px;color:var(--sub);white-space:nowrap}
 .rowbar:hover .lb{color:var(--mint)}
@@ -93,7 +97,9 @@ a{color:inherit;text-decoration:none}
 .tbl th{font-size:12.5px;color:var(--muted);font-weight:600;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
 .tbl td{padding:10px;border-bottom:1px solid var(--bg2);font-weight:600}
 @media(max-width:860px){.grid3,.grid4,.statrow,.axes{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}
-.hero h1{font-size:26px}.rowbar .lb{flex-basis:110px;font-size:13px}}
+.hero h1{font-size:26px}.rowbar .lb{flex-basis:96px;font-size:13px}.rowbar .vl{font-size:12px}
+.nav-in{gap:12px}.nav .menu{gap:12px;font-size:13px}.nav .brand{font-size:15px;flex:0 0 auto}
+.chead h1{font-size:22px}.score-badge{margin-left:0;width:100%;display:flex;gap:10px;align-items:baseline;justify-content:center}}
 @media(max-width:520px){.grid3,.grid4{grid-template-columns:1fr}.statrow{grid-template-columns:repeat(2,1fr)}}
 </style></head><body><nav class="nav"><div class="nav-in"><a class="brand" href="https://careerscan.slopeyard.com/"><span class="dot">K</span>K뷰티 커리어스캔</a><span class="sp"></span><div class="menu"><a href="https://careerscan.slopeyard.com/rank-pay.html">연봉랭킹</a><a href="https://careerscan.slopeyard.com/rank-hiring.html">채용신호</a><a href="https://careerscan.slopeyard.com/compare.html">비교</a><a href="https://careerscan.slopeyard.com/#explore">전체기업</a><a href="https://careerscan.slopeyard.com/guide.html">가이드</a><a href="https://careerscan.slopeyard.com/methodology.html">방법론</a></div></div></nav><div class="wrap">
 <p class="crumb"><a href="https://careerscan.slopeyard.com/">홈</a> › <a href="https://careerscan.slopeyard.com/#explore">전체기업</a> › 잉글우드랩</p>
@@ -108,10 +114,7 @@ a{color:inherit;text-decoration:none}
 <span style="font-size:13px;margin-left:auto">📉 <b style='color:#EB5757'>매출 감소</b> — 최근 매출 -16%</span></div>
 <p style="font-size:12.5px;color:var(--muted);margin-bottom:8px">국민연금 신고 업종: 화장품 제조업</p>
 <p style="font-size:15px;color:var(--sub);margin-bottom:12px">미국 시장 특화 화장품 제조 — 코스메카 계열</p>
-
-<div class="stitle" style="font-size:14px;margin-bottom:10px">구직자 실사 링크 — 제품·평판·뉴스 직접 확인</div>
-<div class="simrow"><a class="sim" href="https://www.oliveyoung.co.kr/store/search/getSearchMain.do?query=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9" target="_blank" rel="noopener">🛒 올리브영에서 "잉글우드랩" 보기</a><a class="sim" href="https://www.hwahae.co.kr/search?q=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9" target="_blank" rel="noopener">💬 화해 리뷰</a><a class="sim" href="https://search.shopping.naver.com/search/all?query=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9" target="_blank" rel="noopener">⭐ 네이버쇼핑 리뷰</a><a class="sim" href="https://search.naver.com/search.naver?where=news&query=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9" target="_blank" rel="noopener">📰 최신 뉴스</a><a class="sim" href="https://www.jobplanet.co.kr/search?query=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9" target="_blank" rel="noopener">👀 잡플래닛 평판</a><a class="sim" href="https://www.saramin.co.kr/zf_user/search?searchword=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9" target="_blank" rel="noopener">📋 사람인 채용공고</a><a class="sim" href="https://www.wanted.co.kr/search?query=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9&tab=position" target="_blank" rel="noopener">🚀 원티드 채용공고</a></div>
-<p class="src">※ 외부 링크는 각 플랫폼 검색 결과로 연결 — 지원 전 제품 리뷰(소비자 반응)와 재직자 평판을 함께 볼 것</p></div></div>
+</div></div>
 <div class="sec"><div class="sec-h"><h2>한눈에 보기</h2></div>
 <div class="grid4"><div class="stat"><div class="v" >3,816만</div><div class="k">평균연봉 추정</div></div><div class="stat"><div class="v" >128<small>명</small></div><div class="k">국민연금 가입 인원</div></div><div class="stat"><div class="v" style="color:#00996B">4<small>명</small></div><div class="k">최근 1개월 입사</div></div><div class="stat"><div class="v" >3<small>명</small></div><div class="k">최근 1개월 퇴사</div></div><div class="stat"><div class="v" >1억</div><div class="k">매출 (2024)</div></div><div class="stat"><div class="v" style="color:#EB5757">-16%</div><div class="k">매출 성장(YoY)</div></div><div class="stat"><div class="v" style="color:#00996B">10.3%</div><div class="k">영업이익률</div></div><div class="stat"><div class="v" >85%</div><div class="k">부채비율</div></div></div><p class="src">※ 평균연봉 = 국민연금 월 신고보수 × 12 — 신고 상한 탓에 고연봉 기업일수록 과소 추정 · 본사 사업장 기준 · 입퇴사는 취득/상실 신고 기준</p></div>
 <div class="grid2 sec">
@@ -126,4 +129,8 @@ a{color:inherit;text-decoration:none}
 <p class="src" style="margin-top:16px">점수대가 비슷한 대안 후보 — 함께 비교해보길 권장</p></div>
 </div>
 <div class="grid2 sec"><div class="card"><div class="stitle">자주 묻는 질문</div><ul class="cklist"><li><span class="ck up"></span><span><b>잉글우드랩 평균연봉은?</b><br>국민연금 신고보수 기준 추정 평균연봉 3,816만원(월 318만원, 128명 기준). 신고 상한 때문에 실제보다 낮게 추정될 수 있고 신입~임원 전체 평균임.</span></li><li><span class="ck up"></span><span><b>잉글우드랩 지금 채용 중일까?</b><br>최근 1개월 국민연금 취득 4명·상실 3명 — 순증 +1명으로 조직이 커지는 중. 실제 공고는 사람인·원티드에서 회사명 검색.</span></li><li><span class="ck up"></span><span><b>잉글우드랩 성장하는 회사인가?</b><br>최근 매출 1억으로 전년 대비 -16%. 영업이익률 10.3%.</span></li><li><span class="ck up"></span><span><b>잉글우드랩 어디에 있나?</b><br>본사 사업장 기준 인천 남동구 (화장품 제조업).</span></li></ul></div><div class="card"><div class="stitle">이 회사, 비교해보기</div><p style="font-size:14px;color:var(--sub);margin-bottom:12px">점수대가 비슷한 회사와 연봉·입퇴사·재무를 나란히 비교</p><div class="simrow"><a class="sim" href="https://careerscan.slopeyard.com/compare.html?a=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9&b=LG%EC%83%9D%ED%99%9C%EA%B1%B4%EA%B0%95">vs LG생활건강</a><a class="sim" href="https://careerscan.slopeyard.com/compare.html?a=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9&b=%EC%98%A4%EB%8B%88%EC%8A%A4%ED%8A%B8">vs 오니스트</a><a class="sim" href="https://careerscan.slopeyard.com/compare.html?a=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9&b=%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%A6%BC">vs 익스트림</a></div></div></div>
+<div class="sec"><div class="sec-h"><h2>더 깊이 확인하기</h2></div>
+<p class="sec-cap">이 페이지 요약으로 부족할 때 — 각 플랫폼 검색 결과로 바로 연결</p>
+<div class="card"><div class="simrow"><a class="sim" href="https://www.oliveyoung.co.kr/store/search/getSearchMain.do?query=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9" target="_blank" rel="noopener">🛒 올리브영에서 "잉글우드랩" 보기</a><a class="sim" href="https://www.hwahae.co.kr/search?q=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9" target="_blank" rel="noopener">💬 화해 리뷰</a><a class="sim" href="https://search.shopping.naver.com/search/all?query=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9" target="_blank" rel="noopener">⭐ 네이버쇼핑 리뷰</a><a class="sim" href="https://search.naver.com/search.naver?where=news&query=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9" target="_blank" rel="noopener">📰 최신 뉴스</a><a class="sim" href="https://www.jobplanet.co.kr/search?query=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9" target="_blank" rel="noopener">👀 잡플래닛 평판</a><a class="sim" href="https://www.saramin.co.kr/zf_user/search?searchword=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9" target="_blank" rel="noopener">📋 사람인 채용공고</a><a class="sim" href="https://www.wanted.co.kr/search?query=%EC%9E%89%EA%B8%80%EC%9A%B0%EB%93%9C%EB%9E%A9&tab=position" target="_blank" rel="noopener">🚀 원티드 채용공고</a></div>
+<p class="src">※ 지원 전 제품 리뷰(소비자 반응)와 재직자 평판을 함께 볼 것</p></div></div>
 </div><footer class="foot"><div class="wrap">데이터: 금융감독원 전자공시(DART) 감사보고서 2022–2025 · 국민연금공단 사업장 신고 공시 · 매월 자동 갱신<br>본 사이트의 점수·태그는 공개 산식에 따른 상대평가 참고지표로, 투자·입사 결정의 근거가 아니며 각 기업의 실제 상태와 다를 수 있음. 정정 요청: <a href="https://github.com/jaehoonLee-Constant/kbeauty-careerscan/issues" style="text-decoration:underline">GitHub Issues</a> · © 2026 K뷰티 커리어스캔</div></footer></body></html>
